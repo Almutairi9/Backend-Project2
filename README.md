@@ -23,7 +23,7 @@ I use standard Express parameters. “req” is for the request object. This is 
 I have installed react node js and some packages for express node js. 
 I have installed some packages from bootstrap for our design.
 
-**Install Cap2-Backend with npm**
+**Install Backend-Project2 with npm**
 
 ```bash
   git clone for Backend-Project2 
