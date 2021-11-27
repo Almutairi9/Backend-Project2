@@ -6,11 +6,14 @@ const options = {
 const dotenv = require("dotenv");
 dotenv.config();
 const DB = process.env.DB;
-mongoose.connect(`mongodb://localhost:27017/${DB}`, options).then(
-  () => {
-    console.log("DB Ready To Use");
-  },
-  (err) => {
-    console.log(err);
-  }
-);
+// const PASSWORD = process.env.PASSWORD;
+mongoose
+  .connect(`${DB}`, options)
+  .then(
+    () => {
+      console.log("DB Ready To Use");
+    },
+    (err) => {
+      console.log(err);
+    }
+  );
