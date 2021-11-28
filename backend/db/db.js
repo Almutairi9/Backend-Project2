@@ -8,12 +8,12 @@ dotenv.config();
 const DB = process.env.DB;
 // const PASSWORD = process.env.PASSWORD;
 mongoose
-  .connect(`${DB}`, options)
+  .connect(`mongodb://localhost:27017/${DB}`, options)
   .then(
     () => {
       console.log("DB Ready To Use");
     },
-    (err) => {
+    (err) => { 
       console.log(err);
     }
   );
